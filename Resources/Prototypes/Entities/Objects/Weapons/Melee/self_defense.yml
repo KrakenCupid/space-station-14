@@ -8,7 +8,7 @@
     activatedDamage:
       types:
         Blunt: 0
-        Electrical: 15
+        Shock: 15
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
