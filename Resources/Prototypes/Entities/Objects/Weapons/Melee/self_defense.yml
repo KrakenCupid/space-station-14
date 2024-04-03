@@ -61,3 +61,16 @@
       types:
         Slash: 9
         Cellular: 1
+
+- type: entity
+  name: administrative cane
+  parent: WhiteCane
+  id: AdminCane
+  description: For beating off the clowns from your desk, both the literal and metaphorical ones.
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 6
+  - type: StaminaDamageOnHit
+    damage: 10
