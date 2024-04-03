@@ -1,7 +1,7 @@
 - type: entity
   name: tesla box
   parent: Stunbaton
-  id: Teslabox
+  id: TeslaBox
   description: A small box with a switch on the side capable of releasing small bursts of electricity.
   components:
   - type: ItemToggleMeleeWeapon
@@ -24,7 +24,7 @@
 - type: entity
   name: heavy-duty wrench
   parent: Wrench
-  id: Heavydutywrench
+  id: HeavyDutyWrench
   description: A bulky plasteel wrench, useful for knocking someone silly.
   components:
     - type: StaminaDamageOnHit
@@ -39,7 +39,7 @@
 - type: entity
   name: crusher baton
   parent: WeaponCrusherDagger
-  id: Crusherbaton
+  id: CrusherBaton
   description: A primitive crusher prototype that stores and discharges precussive energy on hit.
   components:
   - type: MeleeWeapon
@@ -56,7 +56,7 @@
 - type: entity
   name: gene cutter
   parent: BaseItem
-  id: Genecutter
+  id: GeneCutter
   description: An outdated ethically-questionable geneticist tool, now it is most often used to cut flesh.
   components:
   - type: MeleeWeapon
