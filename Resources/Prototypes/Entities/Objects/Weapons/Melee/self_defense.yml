@@ -22,7 +22,7 @@
 
 - type: entity
   name: heavy-duty wrench
-  parent: 
+  parent: Wrench
   id: Heavydutywrench
   description: A bulky plasteel wrench, useful for knocking someone silly.
   components:
