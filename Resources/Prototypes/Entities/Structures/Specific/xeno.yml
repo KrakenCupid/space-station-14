@@ -62,3 +62,52 @@
     - state: statue
     - state: unshaded
       shader: unshaded
+
+- type: entity
+  parent: XenoWardingTower
+  id: DivineStatue
+  name: divine statue
+  description: You cant make heads or tails of what it is, but it is none the less beautiful.
+  components:
+
+- type: entity
+  parent: XenoWardingTower
+  id: SilikingObserver
+  name: observer
+  description: It seems to be staring at you.
+  components:
+
+- type: entity
+  parent: XenoWardingTower
+  id: OblivionPortal
+  name: oblivion portal
+  description: The abyss stares back.
+  components:
+
+- type: entity
+  parent: XenoWardingTower
+  id: HordeMound
+  name: flesh mound
+  description: A pile of limbs and various viscera.
+  components:
+
+- type: entity
+  parent: XenoWardingTower
+  id: FlamingWatchtower
+  name: flaming watchtower
+  description: A towering spire of flesh and black metal.
+  components:
+
+- type: entity
+  parent: XenoWardingTower
+  id: HoundMonolith
+  name: monolith
+  description: A breach in the very concept of reality.
+  components:
+
+- type: entity
+  parent: XenoWardingTower
+  id: FairyShrine
+  name: strange shrine
+  description: Some form of druidic ritual circle?
+  components:
