@@ -61,13 +61,13 @@
     Megafauna: MobFalseSeraphDungeon
 
 - type: salvageFaction
-  id: Greytrons
+  id: Greytroids
   entries:
-    - proto: MobGreytronAssistantDungeon
-    - proto: MobGreytronPackerDungeon
+    - proto: MobGreytroidAssistantDungeon
+    - proto: MobGreytroidPackerDungeon
       cost: 5
       prob:  0.1
-    - proto: MobGreytronLifterDungeon
+    - proto: MobGreytroidLifterDungeon
       cost: 7
       prob:  0.075
     - proto: MobSilikingDungeon
