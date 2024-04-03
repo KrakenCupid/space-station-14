@@ -38,6 +38,6 @@
 
 - type: entity
   name: crusher baton
-  parent: Wrench
+  parent: WeaponCrusherDagger
   id: Crusherbaton
   description: A primitive crusher prototype used for close-quarters combat
