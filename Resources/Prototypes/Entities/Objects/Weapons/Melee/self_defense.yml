@@ -55,7 +55,7 @@
 
 - type: entity
   name: gene cutter
-  parent: 
+  parent: BaseItem
   id: Genecutter
   description: An outdated ethically-questionable geneticist tool, now it is most often used to cut flesh.
   components:
