@@ -28,10 +28,10 @@
   description: A bulky plasteel wrench, useful for knocking someone silly.
   components:
     - type: StaminaDamageOnHit
-      damage: 35
+      damage: 10
     - type: MeleeWeapon
       wideAnimationRotation: -135
-      attackRate: 0.7
+      attackRate: 1
       damage:
         types:
-          Blunt: 15
+          Blunt: 7
