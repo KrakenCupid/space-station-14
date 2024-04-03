@@ -47,17 +47,15 @@
   id: FalseAngels
   entries:
     - proto: MobFalseCherubDungeon
-      cost: 
-      prob:
     - proto: MobFalsePowerDungeon
-      cost: 
+      cost: 4
       prob:
     - proto: MobFalseVirtueDungeon
-      cost: 
-      prob: 
+      cost: 6
+      prob: 0.1
     - proto: MobFalseSeraphDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: DivineStatue
     Megafauna: MobFalseSeraphDungeon
@@ -66,17 +64,15 @@
   id: Greytrons
   entries:
     - proto: MobGreytronAssistantDungeon
-      cost: 
-      prob:
     - proto: MobGreytronPackerDungeon
-      cost: 
-      prob:
+      cost: 5
+      prob:  0.1
     - proto: MobGreytronLifterDungeon
-      cost: 
-      prob: 
+      cost: 7
+      prob:  0.075
     - proto: MobSilikingDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: SilikingObserver
     Megafauna: MobSilikingDungeon
@@ -85,17 +81,15 @@
   id: Oblivifiers
   entries:
     - proto: MobSilhouetteDungeon
-      cost: 
-      prob:
     - proto: MobRakeDungeon
-      cost: 
-      prob:
+      cost: 3
+      prob: 0.1
     - proto: MobVoidDungeon
-      cost: 
-      prob: 
+      cost: 7
+      prob: 0.075
     - proto: MobOblivionOrbDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: OblivionPortal
     Megafauna: MobOblivionOrbDungeon
@@ -104,17 +98,15 @@
   id: Horde
   entries:
     - proto: MobHordeScoutDungeon
-      cost: 
-      prob:
     - proto: MobHordeSoldierDungeon
-      cost: 
-      prob:
+      cost: 2
+      prob: 0.5
     - proto: MobHordeEliteDungeon
-      cost: 
-      prob: 
+      cost: 3
+      prob:  0.3
     - proto: MobHordeWarlordDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: HordeBarricade
     Megafauna: MobHordeWarlordDungeon
@@ -123,17 +115,15 @@
   id: DemonDwarves
   entries:
     - proto: MobHellBreakerDungeon
-      cost: 
-      prob:
     - proto: MobFlamebeardDungeon
-      cost: 
-      prob:
+      cost: 5
+      prob: 0.1
     - proto: MobInfernoGuardDungeon
-      cost: 
-      prob: 
+      cost: 8
+      prob: 0.05
     - proto: MobHellforgeKingDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: FlamingWatchtower
     Megafauna: MobDragonDungeon
@@ -142,17 +132,15 @@
   id: Hounds
   entries:
     - proto: MobHoundPupDungeon
-      cost: 
-      prob:
     - proto: MobFeralHoundDungeon
-      cost: 
-      prob:
+      cost: 3
+      prob: 0.3
     - proto: MobHunterHoundDungeon
-      cost: 
-      prob: 
+      cost: 5
+      prob: 0.1
     - proto: MobHoundMotherDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: HoundMonolith
     Megafauna: MobHoundMotherDungeon
@@ -161,17 +149,15 @@
   id: Fairy
   entries:
     - proto: MobPixieDungeon
-      cost: 
-      prob:
     - proto: MobFairyHunterDungeon
-      cost: 
-      prob:
+      cost: 2
+      prob: 0.5
     - proto: MobFairyWarriorDungeon
-      cost: 
-      prob: 
+      cost: 5
+      prob: 0.1
     - proto: MobFairyQueenDungeon
-      cost: 
-      prob: 
+      cost: 10
+      prob: 0.02
   configs:
     DefenseStructure: FairyShrine
     Megafauna: MobFairyQueenDungeon
