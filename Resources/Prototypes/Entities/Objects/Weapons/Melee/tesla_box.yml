@@ -1,1 +1,6 @@
-
+- type: entity
+  name: tesla box
+  parent: Stunbaton
+  id: Teslabox
+  description: A small box with a switch on the side capable of releasing small bursts of electricity.
+  components:
