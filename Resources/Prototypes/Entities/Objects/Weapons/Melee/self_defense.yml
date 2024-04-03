@@ -10,7 +10,6 @@
         Blunt: 0
         Shock: 15
   - type: MeleeWeapon
-    wideAnimationRotation: -135
     attackRate: 0.8
     damage:
       types:
@@ -30,7 +29,6 @@
     - type: StaminaDamageOnHit
       damage: 10
     - type: MeleeWeapon
-      wideAnimationRotation: -135
       attackRate: 1
       damage:
         types:
@@ -43,8 +41,6 @@
   description: A primitive crusher prototype that stores and discharges precussive energy on hit.
   components:
   - type: MeleeWeapon
-    autoAttack: true
-    wideAnimationRotation: -135
     attackRate: 1.5
     damage:
       types:
@@ -60,8 +56,6 @@
   description: An outdated ethically-questionable geneticist tool, now it is most often used to cut flesh.
   components:
   - type: MeleeWeapon
-    autoAttack: true
-    wideAnimationRotation: -135
     attackRate: 2
     damage:
       types:
