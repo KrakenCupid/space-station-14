@@ -42,3 +42,136 @@
   configs:
     DefenseStructure: CarpStatue
     Megafauna: MobDragonDungeon
+
+- type: salvageFaction
+  id: FalseAngels
+  entries:
+    - proto: MobFalseCherubDungeon
+      cost: 
+      prob:
+    - proto: MobFalsePowerDungeon
+      cost: 
+      prob:
+    - proto: MobFalseVirtueDungeon
+      cost: 
+      prob: 
+    - proto: MobFalseSeraphDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: DivineStatue
+    Megafauna: MobFalseSeraphDungeon
+
+- type: salvageFaction
+  id: Greytrons
+  entries:
+    - proto: MobGreytronAssistantDungeon
+      cost: 
+      prob:
+    - proto: MobGreytronPackerDungeon
+      cost: 
+      prob:
+    - proto: MobGreytronLifterDungeon
+      cost: 
+      prob: 
+    - proto: MobSilikingDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: SilikingObserver
+    Megafauna: MobSilikingDungeon
+
+- type: salvageFaction
+  id: Oblivifiers
+  entries:
+    - proto: MobSilhouetteDungeon
+      cost: 
+      prob:
+    - proto: MobRakeDungeon
+      cost: 
+      prob:
+    - proto: MobVoidDungeon
+      cost: 
+      prob: 
+    - proto: MobOblivionOrbDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: OblivionPortal
+    Megafauna: MobOblivionOrbDungeon
+
+- type: salvageFaction
+  id: Horde
+  entries:
+    - proto: MobHordeScoutDungeon
+      cost: 
+      prob:
+    - proto: MobHordeSoldierDungeon
+      cost: 
+      prob:
+    - proto: MobHordeEliteDungeon
+      cost: 
+      prob: 
+    - proto: MobHordeWarlordDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: HordeBarricade
+    Megafauna: MobHordeWarlordDungeon
+
+- type: salvageFaction
+  id: DemonDwarves
+  entries:
+    - proto: MobHellBreakerDungeon
+      cost: 
+      prob:
+    - proto: MobFlamebeardDungeon
+      cost: 
+      prob:
+    - proto: MobInfernoGuardDungeon
+      cost: 
+      prob: 
+    - proto: MobHellforgeKingDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: FlamingWatchtower
+    Megafauna: MobDragonDungeon
+
+- type: salvageFaction
+  id: Hounds
+  entries:
+    - proto: MobHoundPupDungeon
+      cost: 
+      prob:
+    - proto: MobFeralHoundDungeon
+      cost: 
+      prob:
+    - proto: MobHunterHoundDungeon
+      cost: 
+      prob: 
+    - proto: MobHoundMotherDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: HoundMonolith
+    Megafauna: MobHoundMotherDungeon
+
+- type: salvageFaction
+  id: Fairy
+  entries:
+    - proto: MobPixieDungeon
+      cost: 
+      prob:
+    - proto: MobFairyHunterDungeon
+      cost: 
+      prob:
+    - proto: MobFairyWarriorDungeon
+      cost: 
+      prob: 
+    - proto: MobFairyQueenDungeon
+      cost: 
+      prob: 
+  configs:
+    DefenseStructure: FairyShrine
+    Megafauna: MobFairyQueenDungeon
