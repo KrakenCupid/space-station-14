@@ -8,9 +8,12 @@
     activatedDamage:
       types:
         Blunt: 0
-        Elsectrical: 15
+        Electrical: 15
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
       types:
         Blunt: 2
+  - type: Battery
+    maxCharge: 250
+    startingCharge: 250
