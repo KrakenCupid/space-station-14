@@ -17,3 +17,8 @@
   - type: Battery
     maxCharge: 250
     startingCharge: 250
+
+- type: entity
+  name: heavy-duty wrench
+  parent: 
+  id: Heavydutywrench
