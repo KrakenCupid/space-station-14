@@ -4,3 +4,13 @@
   id: Teslabox
   description: A small box with a switch on the side capable of releasing small bursts of electricity.
   components:
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 0
+        Elsectrical: 15
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 2
