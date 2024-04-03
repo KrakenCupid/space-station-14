@@ -108,7 +108,7 @@
       cost: 10
       prob: 0.02
   configs:
-    DefenseStructure: HordeBarricade
+    DefenseStructure: HordeMound
     Megafauna: MobHordeWarlordDungeon
 
 - type: salvageFaction
