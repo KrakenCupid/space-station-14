@@ -35,3 +35,9 @@
       damage:
         types:
           Blunt: 7
+
+- type: entity
+  name: crusher baton
+  parent: Wrench
+  id: Crusherbaton
+  description: A primitive crusher prototype used for close-quarters combat
