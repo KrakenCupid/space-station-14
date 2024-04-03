@@ -51,7 +51,7 @@
 
 - type: entity
   name: gene cutter
-  parent: BaseItem
+  parent: Scalpel
   id: GeneCutter
   description: An outdated ethically-questionable geneticist tool, now it is most often used to cut flesh.
   components:
@@ -59,5 +59,5 @@
     attackRate: 2
     damage:
       types:
-        Slash: 4
+        Slash: 9
         Cellular: 1
