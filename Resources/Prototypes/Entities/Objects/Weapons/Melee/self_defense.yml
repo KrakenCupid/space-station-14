@@ -14,6 +14,8 @@
     damage:
       types:
         Blunt: 2
+  - type: StaminaDamageOnHit
+    damage: 60
   - type: Battery
     maxCharge: 250
     startingCharge: 250
@@ -23,3 +25,11 @@
   parent: 
   id: Heavydutywrench
   description: A bulky plasteel wrench, useful for knocking someone silly.
+  components:
+    - type: StaminaDamageOnHit
+      damage: 35
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      damage:
+        types:
+          Blunt: 15
