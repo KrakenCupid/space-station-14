@@ -153,10 +153,9 @@
           Heat: 10
 
 - type: entity
-  name: Cherub
   id: MobFalseCherubDungeon
   parent: MobFalseCherub
-  description: 
+  suffix: Dungeon
   components:
     - type: MeleeWeapon
       damage:
@@ -164,10 +163,9 @@
           Slash: 5
 
   - type: entity
-  name: power
   id: MobFalsePowerDungeon
   parent: MobFalsePower
-  description: 
+  suffix: Dungeon
   components:
     - type: MeleeWeapon
       damage:
@@ -176,10 +174,9 @@
           Heat: 2
 
   - type: entity
-  name: virtue
   id: MobFalseVirtueDungeon
   parent: MobFalseVirtue
-  description: 
+  suffix: Dungeon
   components:
     - type: MobThresholds
       thresholds:
@@ -194,10 +191,9 @@
           Heat: 2
 
   - type: entity
-  name: seraph
   id: MobFalseSeraphDungeon
   parent: MobFalseSeraph
-  description: 
+  suffix: Dungeon
   components:
     - type: MobThresholds
       thresholds:
