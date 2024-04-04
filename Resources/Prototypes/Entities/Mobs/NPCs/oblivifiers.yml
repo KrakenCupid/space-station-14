@@ -1,1 +1,201 @@
+- type: entity
+  name: oblivifier
+  id: BaseMobOblivifier
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: 
+  abstract: true
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHostileCompound
+      blackboard:
+        NavSmash: !type:Bool
+          true
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: Mobs/Aliens/Carps/space.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.40
+          density: 80
+          mask:
+            - FlyingMobMask
+          layer:
+            - FlyingMobLayer
+    - type: MobState
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        50: Dead
+    - type: Stamina
+      critThreshold: 100
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: alive
+          BaseUnshaded: mouth
+        Dead:
+          Base: dead
+          BaseUnshaded: dead_mouth
+    - type: Butcherable
+      spawned:
+        - id: FoodMeatFish
+          amount: 2
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcBite
+      soundHit:
+        path: /Audio/Effects/bite.ogg
+      damage:
+        types:
+          Piercing: 5
+          Slash: 10
+    - type: TypingIndicator
+      proto: alien
+    - type: Tag
+      tags:
+        - Carp
+        - DoorBumpOpener
+    - type: ReplacementAccent
+      accent: genericAggressive
+    - type: Speech
+      speechVerb: LargeMob
+    - type: InteractionPopup
+      interactSuccessString: petting-success-carp
+      interactFailureString: petting-failure-carp
+      interactFailureSound:
+        path: /Audio/Effects/bite.ogg
 
+- type: entity
+  name: silhouette
+  id: MobSilhouette
+  parent: BaseMobOblivifier
+  description: The absence of a person.
+  components:
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        75: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 5
+          Cold: 5
+          Cellular: 2
+
+  - type: entity
+  name: rake
+  id: MobRake
+  parent: BaseMobOblivifier
+  description: Bringer of nothingness.
+  components:
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        100: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 10
+          Cold: 5
+          Cellular: 3
+
+  - type: entity
+  name: void
+  id: MobVoid
+  parent: BaseMobOblivifier
+  description: It calls you to oblivion.
+  components:
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        235: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Cellular: 10
+
+  - type: entity
+  name: orb
+  id: MobOblivionOrb
+  parent: BaseMobOblivifier
+  description: True emptiness.
+  components:
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        200: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Cellular: 15
+          Cold: 10
+          Radiation: 10
+
+- type: entity
+  id: MobSilhouetteDungeon
+  parent: MobSilhouette
+  suffix: Dungeon
+  components:
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        65: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 1
+          Cold: 1
+          Cellular: 1
+
+  - type: entity
+  id: MobRake
+  parent: MobRakeDungeon
+  suffix: Dungeon
+  components:
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 4
+          Cold: 2
+          Cellular: 3
+
+  - type: entity
+  id: MobVoidDungeon
+  parent: MobVoid
+  suffix: Dungeon
+  components:
+    - type: MeleeWeapon
+      damage:
+        types:
+          Cellular: 5
+
+  - type: entity
+  id: MobOblivionOrbDungeon
+  parent: MobOblivionOrb
+  suffix: Dungeon
+  components:
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Cellular: 10
+          Cold: 7
+          Radiation: 7
