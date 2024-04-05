@@ -163,8 +163,8 @@
           Cellular: 1
 
   - type: entity
-  id: MobRake
-  parent: MobRakeDungeon
+  id: MobRakeDungeon
+  parent: MobRake
   suffix: Dungeon
   components:
     - type: MeleeWeapon
