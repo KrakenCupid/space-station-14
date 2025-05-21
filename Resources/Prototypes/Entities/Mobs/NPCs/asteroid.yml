@@ -425,3 +425,88 @@
     - id: DiamondOre1
       amount: 1
       maxAmount: 3
+
+- type: entity
+  id: MobSiren
+  parent: BaseMobAsteroid
+  name: salvager
+  description: Dont mind me.
+  - type: Sprite
+    layers:
+    - sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
+    - sprite: Clothing/Head/Hardsuits/salvage.rsi
+
+- type: entity
+  id: ActionSirenReveal
+  name: Reveal
+  description: Reveal your true form.
+  components:
+  - type: InstantAction
+    useDelay: 0
+    event: !type:PolymorphActionEvent
+      protoId: MobSirenRevealed
+    itemIconStyle: NoItem
+    icon:
+      sprite: Mobs/Animals/spider.rsi
+      state: tarantula
+            
+- type: entity
+  id: MobSirenRevealed
+  parent: [ BaseMobAsteroid, MobBloodstream ]
+  name: siren
+  description: Don't run.
+  - type: Sprite
+    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: goliath
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: goliath
+      Dead:
+        Base: goliath_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.00
+    baseSprintSpeed : 2.00
+  - type: Bloodstream
+    bloodMaxVolume: 350
+    chemicalMaxVolume: 0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Dead
+  - type: MeleeWeapon
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+    angle: 0
+    attackRate: 0.75
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 10
+        Piercing: 10
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard: 
+      VisionRadius: !type:Single
+        15
+      AggroVisionRadius: !type:Single
+        15
+      NavSmash: !type:Bool
+        true
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - FootstepSound
+  - type: NoSlip
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatGoliath
+      amount: 3
+    - id: MaterialGoliathHide1
+      amount: 3
