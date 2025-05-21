@@ -223,6 +223,17 @@
     exitPolymorphSound: /Audio/Magic/ethereal_exit.ogg
     duration: 3
 
+# Siren Reveal
+
+- type: polymorph
+  id: SirenReveal
+  configuration:
+    entity: MobSirenRevealed 
+    transferName: false
+    inventory: None
+    revertOnDeath: false
+    revertOnCrit: false
+
 # Desynchronized / Void Pocket status
 - type: polymorph
   id: VoidPocket
